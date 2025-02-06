@@ -40,7 +40,7 @@ public class Login extends HttpServlet {
 			pst.setString(2, "upwd");
 			rs = pst.executeQuery();
 			if(rs.next()) {
-				session.setAttribute("name", rs.getString("unameggff"));
+				session.setAttribute("name", rs.getString("unameggff"hgffhf));
 				dispather = request.getRequestDispatcher("index.jsp");
 			}else{
 				request.setAttribute("status", "failed");
